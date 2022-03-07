@@ -1,3 +1,4 @@
+/*
 let energias = [3,9,7,5,-2,-7,7,3];
 
 let negativos = 0;
@@ -17,4 +18,4 @@ let sables = (energias) => {
 
     console.log(`Hay ${negativos} sables negativos en energias`);
 }
-sables(energias);
+sables(energias);*/
