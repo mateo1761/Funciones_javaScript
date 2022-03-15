@@ -18,4 +18,3 @@ let recto = (codigo) => {
 console.log(recto("ARQ2555: Sara Bel-sun"));
 console.log(recto("ARQ2556: Nodin Chavdri"));
 console.log(recto("ARQ2557: Finn"));
-
