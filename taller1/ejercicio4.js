@@ -1,3 +1,4 @@
+/* Forma 1
 let sables = [
     {
         color : "amarillo",
@@ -121,6 +122,76 @@ let sables = [
 
 ]
 
-let filtrar = sables.filter(sable => (sable.energia < 20));
+let filtrar = sables.filter(sable => (sable.eneria < 20));
 
-console.log(filtrar);
+console.log(filtrar);*/
+
+//Forma 2
+
+let color = [
+            "negro",
+            "azul",
+            "verde",
+            "blanco",
+            "morado",
+            "rojo",
+            "naranja",
+            "plateado",
+            "gris",
+            "Dorado"
+];
+
+let energia = [
+
+        50,
+        25,
+        15,
+        10,
+        8,
+        100,
+        7,
+        18,
+        12,
+        15
+];
+
+let portador = [
+
+    "Finn",
+    "Nodin",
+    "Mateo",
+    "Alexis",
+    "ObiWan",
+    "Bel-sun",
+    "cristian",
+    "emmanuel",
+    "salvador",
+    "maxi"
+];
+
+let sables = [];
+
+
+for (let i = 0; i <= 10; i++) {
+    
+    let sable = {};
+    sable.color = color[Math.floor(Math.random() * color.length)];
+    sable.energia = energia[Math.floor(Math.random() * energia.length)];
+    sable.portador = portador[Math.floor(Math.random() * portador.length)];
+
+    sables.push(sable);
+}
+
+
+function contabilizarSables(objetos){
+
+    let filtrar = objetos.filter(function(objeto){
+        return (objeto.energia < 20);
+    })
+
+    console.log(filtrar);
+
+    console.log(`El numero de sables con energia menor a 20 es de:  ${filtrar.length}`);
+}
+
+contabilizarSables(sables);
